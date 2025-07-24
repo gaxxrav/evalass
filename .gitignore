@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Django
+*.sqlite3
+*.db
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.migrations/
+
+# VSCode
+.vscode/
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+
+# macOS
+.DS_Store
+
+# PostgreSQL
+*.pgsql
+*.psql
+
+# Secrets
+*.env
+secrets.json
+
+# Node
+node_modules/
+
+# System
+Thumbs.db
+
+# Git
+.git/
+
+# Other
+*.bak
+*.swp
+*.swo
+
+# Ignore settings and secret files
+backend/backend/settings.py
+!backend/backend/settings.py.example
