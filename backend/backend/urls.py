@@ -2,7 +2,11 @@
 URL configuration for backend project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
+<<<<<<< HEAD
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
+=======
+    https://docs.djangoproject.com/en/5.2/topics/http/urls/
+>>>>>>> a4ab7fa (Project commit)
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,10 +20,18 @@ Including another URLconf
 """
 
 from django.contrib import admin
+<<<<<<< HEAD
 from django.urls import path
 from feedback.views import ping
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ping/', ping, name='ping'),
+=======
+from django.urls import path, include
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path('api/', include('feedback_app.urls')),
+>>>>>>> a4ab7fa (Project commit)
 ]
